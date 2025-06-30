@@ -18,7 +18,7 @@ const res = await fetch(API_URL);
 
 const data = await res.json();
 
-const rawCharacters: Character[] = data.map((c: any, index: number) => {
+const Characters: Character[] = data.map((c: any, index: number) => {
   id: String (index + 1),
   name: c.name,
   alternate_names: c.alternate_names,
